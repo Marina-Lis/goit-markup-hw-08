@@ -19,16 +19,12 @@
 
 .hero__button {
     @include font (#FFFFFF, 700, 16px, 1.9, 0.06em);
-    margin: 0 auto;
+    @include button();
+    @extend %button;
     min-width: 200px;
-    text-align: center;
+   
     border-color: transparent;
     padding: 10px 32px;
-    border-radius: 4px;
+   
     background: var(--accent-text-color);
-    font-family: 'Roboto';
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
 }
