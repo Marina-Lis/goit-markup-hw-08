@@ -1,5 +1,10 @@
 .team {
-    background: #F5F4FA
+    background: #F5F4FA;
+    &__content {
+        padding: 30px 15px;
+        margin: 0 auto;
+        text-align: center;
+    }
 }
 
 .card-list__item {
@@ -11,12 +16,6 @@
     &:not(:last-child) {
         margin-right: var(--tipical-margin);
     }
-}
-
-.team__content {
-    padding: 30px 15px;
-    margin: 0 auto;
-    text-align: center;
 }
 
 .card-list__item-title {
