@@ -3,7 +3,6 @@
     padding: 200px 0px;
     max-width: 1600px;
     margin: 0 auto;
-
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
     background-size: cover;
     background-position: center;
@@ -11,35 +10,25 @@
 }
 
 .hero__top-text {
+    @include font (#FFFFFF, 900, 44px, 1.36, 0.06em);
     max-width: 696px;
-    color: var(--accent2-text-color);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
     text-transform: uppercase;
     margin: 0 auto var(--tipical-margin);
+    text-align: center;
 }
 
 .hero__button {
+    @include font (#FFFFFF, 700, 16px, 1.9, 0.06em);
     margin: 0 auto;
     min-width: 200px;
-
+    text-align: center;
     border-color: transparent;
     padding: 10px 32px;
-    justify-content: center;
     border-radius: 4px;
-
-    color: var(--accent2-text-color);
     background: var(--accent-text-color);
-   
     font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
     display: flex;
     align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
+    justify-content: center;
+
 }
