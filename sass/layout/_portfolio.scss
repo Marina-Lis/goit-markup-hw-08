@@ -8,12 +8,11 @@
 
 .portfolio__button {
   @include font (null, 500, 16px, 1.62);
+  @include button();
   padding: 6px 22px;
   margin-right: 6px;
   background-color: var(--background2-accent);
-  font-family: 'Roboto';
   border: none;
-  border-radius: 4px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
