@@ -2,23 +2,14 @@
     padding-bottom: 0px;
 }
 
-.exelence__list {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-
-
 .exelence__item {
     flex-basis: calc(100/4 - var(--tipical-margin));
     margin-right: var(--tipical-margin);
-}
 
-.exelence__item:last-child {
-    margin-right: 0;
+    &:last-child {
+        margin-right: 0;
+    }
 }
-
 
 .exelence__item-wrapper {
     background-color: #F5F4FA;
@@ -32,15 +23,11 @@
 }
 
 .exelence__item-title {
+    @include font (null, 700, 14px, 1.2, null);
     margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.2;
     text-transform: uppercase;
 }
 
 .exelence__item-text {
-    color: #757575;
-    font-size: 14px;
-    line-height: 1.7;
+    @include font (#757575, null, 14px, 1.7, null);
 }
