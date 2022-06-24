@@ -1,13 +1,10 @@
-.partners {}
-
 .partners__item {
     width: 170px;
     height: 92px;
     margin-right: var(--tipical-margin);
-}
-
-.partners__item:last-child {
-    margin-right: 0px;
+   &:last-child {
+        margin-right: 0px;
+    }
 }
 
 .partners__link {
@@ -18,19 +15,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    &:hover,
+    &:focus {
+        border-color: var(--accent-text-color);
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
-.partners__link:hover,
-.partners__link:focus {
-    border-color: var(--accent-text-color);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 
 .partners__icon {
     fill: #AFB1B8;
-}
-
-.partners__link:hover .partners__icon,
-.partners__link:focus .partners__icon {
-    fill: var(--accent-text-color);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .partners__link:hover &,
+    .partners__link:focus & {
+        fill: var(--accent-text-color);
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
