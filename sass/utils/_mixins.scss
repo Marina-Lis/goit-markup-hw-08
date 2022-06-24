@@ -5,3 +5,10 @@
     line-height: $lh;
     letter-spacing: $lc;
    }
+   
+@mixin button ($br:4px, $ff:'Roboto', $ta:center) {
+       border-radius: $br;
+       font-family: $ff;
+       text-align: $ta;
+   }
+   
