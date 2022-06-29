@@ -7,7 +7,12 @@
 }
 
 .portfolio__button {
-  @include font (null, 500, 16px, 1.62);
+ 
+  font-weight:500;
+  font-size: 16px;
+  line-height: 1.62;
+
+
   @include button();
   padding: 6px 22px;
   margin-right: 6px;
@@ -59,7 +64,7 @@
 }
 
 .portfolio__card-text {
-  @include font (#FFFFFF, null, 18px, 1.56);
+  @include font (#FFFFFF, null, 18px, 1.56, null);
   position: absolute;
   top: 0;
   padding: 63px 24px;
