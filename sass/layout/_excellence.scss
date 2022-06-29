@@ -1,11 +1,18 @@
 .exelence {
     padding-bottom: 0px;
+
+}
+
+.exelence-list{
+    gap: 30px;
 }
 
 .exelence__item {
-    flex-basis: calc(100/4 - var(--tipical-margin));
-    margin-right: var(--tipical-margin);
+    // flex-basis: calc(100/4 - var(--tipical-margin));
+    // margin-right: var(--tipical-margin);
 
+width: 100%;
+margin-bottom: 30px;
     &:last-child {
         margin-right: 0;
     }
@@ -26,6 +33,7 @@
     @include font (null, 700, 14px, 1.2, null);
     margin-bottom: 10px;
     text-transform: uppercase;
+    text-align: center
 }
 
 .exelence__item-text {
