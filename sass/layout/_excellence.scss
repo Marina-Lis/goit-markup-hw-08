@@ -1,11 +1,10 @@
 .exelence {
     padding-bottom: 60px;
-  
     @media screen and ( min-width: 1200px) {
-        padding-bottom: 94px;
+        padding-bottom:0px;
     }
-
-
+  
+  
 }
 
 .exelence-list{
@@ -31,6 +30,7 @@ width: 100%;
         margin-right: 0;
     }
 }
+
 exelence__img{
     
 }
