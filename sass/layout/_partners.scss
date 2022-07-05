@@ -1,7 +1,34 @@
+.partners{
+padding-top: 60px;
+padding-bottom: 60px;
+width: 100%;
+
+@media screen and ( min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+}
+
+.partners--list{
+    gap: 30px;
+}
+
 .partners__item {
-    width: 170px;
+
     height: 92px;
-    margin-right: var(--tipical-margin);
+
+   
+        width: calc((100% - 30px)/2);
+    
+  
+    @media screen and ( min-width: 768px) {
+        width: calc((100% - 60px)/3);
+    }
+    
+    @media screen and ( min-width: 1200px) {
+        width: calc((100% - 150px)/6);
+    }
+
    &:last-child {
         margin-right: 0px;
     }
